@@ -1,4 +1,15 @@
 /*indexhtml стили */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 :root {
   --primary-text-color: #757575;
   --title-text-color: #212121;
@@ -27,12 +38,48 @@ body {
   letter-spacing: 0.03em;
 }
 
-ul {
+ul,
+ol {
   list-style: none;
+
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
 }
 
 a {
   text-decoration: none;
+}
+
+.images {
+  display: block;
+}
+
+/*HEADER*/
+.container {
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+  outline: 2px solid tomato;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  text-align: ;
+  background-color: turquoise;
 }
 /*Text*/
 .text {
@@ -42,11 +89,16 @@ a {
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+
+  margin-top: 0;
+  margin-bottom: 20px;
 }
 
 .page-header {
   background-color: var(--primary-lite-color);
+  outline: 2px solid tomato;
 }
+
 /*Logo*/
 .logo {
   color: var(--primary-dark-color);
@@ -98,7 +150,13 @@ a {
 /*hero*/
 
 .hero {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+
   background-color: var(--background-hero-color);
+  text-align: center;
 }
 .hero-title {
   color: var(--primary-lite-color);
@@ -107,9 +165,14 @@ a {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  margin-top: 0;
+  margin-left: 452px;
+  margin-right: 452px;
+  margin-bottom: 30px;
+  padding-top: 200px;
 }
 
 .hero-button {
@@ -122,12 +185,33 @@ a {
   line-height: 1.9;
   letter-spacing: 0.06em;
 
-  display: flex;
-  align-items: center;
-  text-align: center;
+  border: 1 px solid transparent;
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 200px;
+
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  margin-bottom: 200px;
 }
 
-/*section*/
+/* CAPABILITIES section*/
+.section {
+  padding-top: ;
+  padding-bottom: ;
+  margin-top: 0;
+  margin-bottom: 0;
+  background-color: greenyellow;
+}
+
+.section.no-padding {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.capabilities-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
 .section-title {
   color: var(--title-text-color);
 
@@ -135,17 +219,77 @@ a {
   font-size: 36px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+
+  padding-bottom: 81px;
+  margin-top: 0;
+  text-align: center;
+}
+.capabilities-flex-item {
+  padding-bottom: 94px;
 }
 
 /*advanteges*/
+.advantages-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  background-color: red;
+}
+.section-title {
+  padding-top: ;
+  padding-bottom: ;
+}
 .section .title {
   color: var(--title-text-color);
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.title-description {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.section-title-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  width: 1170px;
+  height: 101px;
+}
+.section-title-li {
+  width: 270px;
+  height: 75px;
+  /*top: 804px;
+  left: 230px;*/
 }
 
 /*Team*/
 
 .team-section {
   background-color: var(--background-team-color);
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 63px;
+  padding-bottom: 94px;
+  padding-left: 215px;
+  padding-right: 215px;
+  background-color: green;
+}
+.team-section p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.employment-team {
+}
+
+.team-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.team-flex-item {
+  padding-bottom: 30px;
+  text-align: center;
 }
 
 .name {
@@ -155,14 +299,30 @@ a {
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+
+  margin-top: 30px;
+  margin-bottom: 10px;
+  text-align: center;
 }
 
 /*Footer*/
 .footer-page {
+  padding-top: ;
+  padding-bottom: ;
+  padding-left: ;
+  padding-right: ;
+
   background-color: var(--background-hero-color);
   letter-spacing: 0.03em;
   font-size: 14px;
   line-height: 1.71;
+}
+
+.footer-page > .container {
+  display: flex;
+  align-items: baseline;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer-logo {
@@ -174,14 +334,23 @@ a {
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+
+  display: block;
+  margin-bottom: 20px;
 }
 
 .footer-logo:hover {
+  display: block;
+  margin-bottom: 20px;
   color: var(--primary-lite-color);
 }
 
 .logo-accent {
   color: var(--accent-color);
+}
+.footer-adress {
+  display: flex;
+  flex-direction: column;
 }
 
 .footer-adress .footer-map {
@@ -195,7 +364,7 @@ a {
 /*portfolio стили */
 
 .portfolio-button {
-  color: var(--title-text-color);
+  color: var(--titl-text-color);
   background-color: var(--background-team-color);
 
   font-family: inherit;
