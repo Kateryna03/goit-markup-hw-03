@@ -71,16 +71,17 @@ a {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-
-  outline: 2px solid tomato;
 }
 
-.header {
+.container-header {
   display: flex;
   justify-content: space-between;
-  text-align: ;
+  align-items: center;
+  height: 80px;
+
   background-color: turquoise;
 }
+
 /*Text*/
 .text {
   font-family: Roboto, sans-serif;
@@ -96,7 +97,6 @@ a {
 
 .page-header {
   background-color: var(--primary-lite-color);
-  outline: 2px solid tomato;
 }
 
 /*Logo*/
@@ -118,6 +118,7 @@ a {
 }
 
 /*Adress*/
+
 .contacts .link {
   color: var(--primary-text-color);
 
