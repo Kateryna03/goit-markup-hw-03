@@ -8,7 +8,7 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
-} 
+}
 
 :root {
   --primary-text-color: #757575;
@@ -66,6 +66,19 @@ a {
   display: block;
 }
 
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 /*HEADER*/
 
 .container {
@@ -89,12 +102,11 @@ a {
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
-
 }
 
 .page-header {
-   background-color: var(--primary-lite-color);
-  background-color: turquoise;
+  background-color: var(--primary-lite-color);
+  border-bottom: 1px solid #ececec;
 }
 
 /*Logo*/
@@ -103,13 +115,11 @@ a {
   padding-top: 24px;
   padding-bottom: 25px;
 
-
   color: var(--primary-dark-color);
   font-family: Raleway, sans-serif;
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
-
 
   /* identical to box height */
 }
@@ -134,7 +144,7 @@ a {
   padding-top: 32px;
   padding-bottom: 32px;
 }
- 
+
 .contacts-item {
   display: flex;
   align-items: center;
@@ -157,7 +167,7 @@ a {
 }
 
 .contacts-item .mail-link {
-margin-left: auto;
+  margin-left: auto;
 }
 
 /*Site nav*/
@@ -199,12 +209,9 @@ margin-left: auto;
   text-align: center;
 
   background-color: var(--background-hero-color);
- 
 }
 
 .hero .container {
-  
-
 }
 
 .hero-title {
@@ -236,7 +243,6 @@ margin-left: auto;
   min-width: 200px;
 
   drop-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
-  
 }
 
 /* CAPABILITIES section*/
@@ -245,7 +251,6 @@ margin-left: auto;
   padding-bottom: ;
   margin-top: 0;
   margin-bottom: 0;
-  background-color: greenyellow;
 }
 
 .capabilities-flex {
@@ -269,7 +274,7 @@ margin-left: auto;
   width: 370px;
 }
 
-.capabilities-flex-item:not(:last-child){
+.capabilities-flex-item:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -277,23 +282,15 @@ margin-left: auto;
 .advantages-section {
   padding-top: 94px;
   padding-bottom: 94px;
-
-  background-color:palegoldenrod;
 }
 
-
-}
-.section-title {
-  display: ;
- 
-}
 .title {
-   margin-bottom: 10px;
+  margin-bottom: 10px;
 }
+
 .section .title {
   color: var(--title-text-color);
   margin-top: 0;
- 
 }
 .title-description {
   max-width: 270px;
@@ -303,10 +300,9 @@ margin-left: auto;
   display: flex;
   flex-wrap: nowrap;
   width: 1170px;
-  
 }
 
-.section-title-li:not(:last-child){
+.section-title-li:not(:last-child) {
   margin-right: 30px;
 }
 /*Team*/
@@ -314,17 +310,11 @@ margin-left: auto;
 .team-section {
   background-color: var(--background-team-color);
   padding: 94px 215px;
-  
-  background-color: green;
 }
+
 .team-section .container {
   align-items: center;
 }
-.team-section p {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
 
 .team-flex {
   display: flex;
@@ -333,10 +323,29 @@ margin-left: auto;
 
 .team-flex-item {
   text-align: center;
-  display: block;
+  width: 270px;
+  height: 368px;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border: 1px solid #ffffff;
+  background-color: var(--primary-lite-color);
+
+  /* SHADOWS
+Drop-shadow
+Radius: 1px
+Offset: 0px, 2px
+rgba(0, 0, 0, 0.2)
+Effect: Drop shadow
+Radius: 1px
+Offset: 0px, 1px
+rgba(0, 0, 0, 0.14)
+Effect: Drop shadow
+Radius: 3px
+Offset: 0px, 1px
+rgba(0, 0, 0, 0.12) */
 }
- 
-.team-flex-item:not(:last-child){
+
+.team-flex-item:not(:last-child) {
   margin-right: 30px;
 }
 .team-card {
@@ -420,10 +429,10 @@ margin-left: auto;
   padding-bottom: 94px;
 }
 .button-list-item {
-  margin-bottom:50px;
+  margin-bottom: 50px;
 }
 
-.button-list-item:not(:last-child){
+.button-list-item:not(:last-child) {
   margin-right: 8px;
 }
 .portfolio-button {
@@ -437,7 +446,6 @@ margin-left: auto;
   letter-spacing: 0.03em;
 
   text-align: center;
-  
 }
 
 .portfolio-button:hover,
@@ -449,7 +457,6 @@ margin-left: auto;
 .button-flex {
   display: flex;
   justify-content: center;
-  
 }
 
 .portfolio-img-flex {
@@ -467,26 +474,23 @@ margin-left: auto;
   margin-right: 0;
 }
 
-.flex-element:nth-last-child(-n+3) {
-  margin-bottom: 0; 
+.flex-element:nth-last-child(-n + 3) {
+  margin-bottom: 0;
 }
 /*.logo-accent */
 
 .portfolio-div-tekst {
-  padding:20px 24px;
+  padding: 20px 24px;
   width: 370px;
   height: 110px;
   text-align: left;
-
-
 }
 
 .port {
-   text-align: left;
-   margin-bottom: 4px; 
-   font-family: Roboto;
-   font-weight: 700;
-   Font-size: 18px;
-   Line-height: 2;
-  Letter spacing: 6%
+  text-align: left;
+  margin-bottom: 4px;
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
 }
