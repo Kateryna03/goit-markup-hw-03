@@ -244,7 +244,7 @@ input[type="checkbox"].visually-hidden {
   padding: 10px 30px;
   min-width: 200px;
 
-  drop-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
+  box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 /*advanteges*/
@@ -256,7 +256,7 @@ input[type="checkbox"].visually-hidden {
 .title-advant {
   margin-bottom: 10px;
   font-family: Roboto;
-  font-style: 700;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   color: #212121;
@@ -377,11 +377,6 @@ rgba(0, 0, 0, 0.12) */
 
 /*Footer*/
 .footer-page {
-  padding-top: ;
-  padding-bottom: ;
-  padding-left: ;
-  padding-right: ;
-
   background-color: var(--background-hero-color);
   letter-spacing: 0.03em;
   font-size: 14px;
@@ -451,7 +446,7 @@ rgba(0, 0, 0, 0.12) */
   margin-bottom: 34px;
 }
 .portfolio-button {
-  color: var(--titl-text-color);
+  color: var(--title-text-color);
   background-color: var(--background-team-color);
 
   font-family: inherit;
